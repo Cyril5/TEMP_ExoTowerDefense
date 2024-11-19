@@ -1,0 +1,14 @@
+Dans les script "Turret" du dossier "Scripts"
+=> La tourelle doit regarder l'avion
+=> Faire en sorte que turrethead puisse regarder que sur l'axe X et turretMount puisse regarder la cible que sur l'axe Y
+=> Créer un prefab de bullet contenant une sphère 
+=> Avec cette condition :
+	    if (_fireRate + _lastShot > Time.time) return
+    _lastShot = Time.time;
+
+faire en sorte que la tourelle puisse instantier des projectile à un interval de tir pour éviter tirer trop projectile 
+lors de l'appel de la méthode Update.
+
+=> Vous pouvez faire tirer votre tourelle si la cible est à une certaine distance de cette dernière avec Vector3.Distance
+=> Faite déplacer l'avion dans une direction avec transform.Translate 
+=> Autoriser le placement des tours seulement sur les zones cyan
